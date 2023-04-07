@@ -433,6 +433,10 @@ label[for='card'] {
     body main {
         padding: 2em 4em;
     }
+
+    #order button {
+        padding: 1.5em 1em;
+    }
 }
 
 @media (max-width: 600px) {
