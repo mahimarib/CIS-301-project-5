@@ -379,7 +379,7 @@ fieldset legend {
         'm m m'
         'name name name'
         'card card card'
-        'ccv exp exp';
+        'exp exp ccv';
     gap: 1em;
 }
 
