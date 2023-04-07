@@ -114,6 +114,7 @@ main .container {
 h2 {
     font-size: 1em;
     margin-bottom: 1em;
+    letter-spacing: 1px;
 }
 
 .section {
