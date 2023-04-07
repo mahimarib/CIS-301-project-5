@@ -340,7 +340,8 @@ fieldset {
     align-items: center;
 }
 
-form {
+#delivery-info,
+#payment {
     position: relative;
 }
 
@@ -348,7 +349,7 @@ form input[type='reset'] {
     width: unset;
     position: absolute;
     right: 0;
-    top: -3.4em;
+    top: 0.5em;
     border: none;
     background-color: transparent;
     padding: 0;
