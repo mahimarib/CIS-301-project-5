@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* outline: 1px dotted magenta; */
 }
 
 body {
@@ -393,8 +394,8 @@ label[for='card'] {
 
 #ccv {
     grid-area: ccv;
-    align-self: center;
-    margin-bottom: -1.5em;
+    align-self: flex-end;
+    margin-bottom: 1rem;
 }
 
 #exp {
