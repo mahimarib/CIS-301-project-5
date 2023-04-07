@@ -447,9 +447,7 @@ label[name='exp'] div {
             'zip state'
             't t';
     }
-}
 
-@media (max-width: 500px) {
     nav {
         padding: 1.5em 1em;
     }
