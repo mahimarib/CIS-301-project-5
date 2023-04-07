@@ -265,6 +265,7 @@ select {
     outline: none;
     border: 1px solid #d5d5d5;
     border-radius: 5px;
+    width: 100%;
     color: #535353;
     letter-spacing: 1px;
     display: block;
@@ -284,35 +285,35 @@ select {
     gap: 1em;
 }
 
-label[name='name'] {
+label[for='name'] {
     grid-area: name;
 }
 
-label[name='tel'] {
+label[for='tel'] {
     grid-area: tel;
 }
 
-label[name='email'] {
+label[for='email'] {
     grid-area: email;
 }
 
-label[name='address'] {
+label[for='address'] {
     grid-area: address;
 }
 
-label[name='city'] {
+label[for='city'] {
     grid-area: city;
 }
 
-label[name='state'] {
+label[for='state'] {
     grid-area: state;
 }
 
-label[name='zip'] {
+label[for='zip'] {
     grid-area: zip;
 }
 
-label[name='instruction'] {
+label[for='instruction'] {
     grid-area: t;
 }
 
@@ -328,6 +329,9 @@ fieldset {
     border: 1px solid #d5d5d5;
     border-radius: 5px;
     padding: 1em;
+}
+
+#payment-type {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -376,26 +380,25 @@ fieldset legend {
     gap: 1em;
 }
 
-#payment form fieldset {
+#payment-type {
     grid-area: m;
 }
 
-label[name='name'] {
+label[for='card-name'] {
     grid-area: name;
 }
-label[name='card'] {
+label[for='card'] {
     grid-area: card;
 }
 
-label[name='ccv'] {
+#ccv {
     grid-area: ccv;
+    align-self: center;
+    margin-bottom: -1.5em;
 }
 
-label[name='exp'] {
+#exp {
     grid-area: exp;
-}
-
-label[name='exp'] div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;

@@ -48,35 +48,45 @@
                     <h2>Delivery Information</h2>
                     <div class="card">
                         <form>
-                            <label name="name">
+                            <label for="name">
                                 Name
-                                <input type="text" autocomplete="name" />
+                                <input
+                                    id="name"
+                                    type="text"
+                                    autocomplete="name"
+                                />
                             </label>
-                            <label name="tel">
+                            <label for="tel">
                                 Mobile Number
-                                <input type="tel" autocomplete="tel" />
+                                <input id="tel" type="tel" autocomplete="tel" />
                             </label>
-                            <label name="email">
+                            <label for="email">
                                 Email
-                                <input type="email" autocomplete="email" />
+                                <input
+                                    id="email"
+                                    type="email"
+                                    autocomplete="email"
+                                />
                             </label>
-                            <label name="address">
+                            <label for="address">
                                 Address
                                 <input
+                                    id="address"
                                     type="text"
                                     autocomplete="address-line1"
                                 />
                             </label>
-                            <label name="city">
+                            <label for="city">
                                 City
                                 <input
+                                    id="city"
                                     type="text"
                                     autocomplete="address-level2"
                                 />
                             </label>
-                            <label name="state">
+                            <label for="state">
                                 State
-                                <select>
+                                <select id="state">
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
@@ -132,14 +142,14 @@
                                     <option value="WY">Wyoming</option>
                                 </select>
                             </label>
-                            <label name="zip">
+                            <label for="zip">
                                 ZIP
-                                <input autocomplete="postal-code" />
+                                <input id="zip" autocomplete="postal-code" />
                             </label>
 
-                            <label name="instruction">
+                            <label for="instruction">
                                 Delivery Instruction
-                                <textarea></textarea>
+                                <textarea id="instruction"></textarea>
                             </label>
                             <input type="reset" />
                         </form>
@@ -152,13 +162,13 @@
                     <h2>Payment Information</h2>
                     <div class="card">
                         <form>
-                            <fieldset>
+                            <fieldset id="payment-type">
                                 <legend>Method</legend>
                                 <div class="choice">
-                                    <label for="card">Credit Card</label
+                                    <label for="credit-card">Credit Card</label
                                     ><input
-                                        id="card"
-                                        value="card"
+                                        id="credit-card"
+                                        value="credit-card"
                                         type="radio"
                                         checked="checked"
                                     />
@@ -182,33 +192,41 @@
                                     />
                                 </div>
                             </fieldset>
-                            <label name="name">
+                            <label for="card-name">
                                 Name on Card
-                                <input type="text" autocomplete="cc-name" />
+                                <input
+                                    id="card-name"
+                                    type="text"
+                                    autocomplete="cc-name"
+                                />
                             </label>
-                            <label name="card">
+                            <label for="card">
                                 Card Number
-                                <input type="number" autocomplete="cc-number" />
+                                <input
+                                    id="card"
+                                    type="number"
+                                    autocomplete="cc-number"
+                                />
                             </label>
-                            <label name="ccv">
-                                CCV
-                                <input type="number" autocomplete="cc-csc" />
-                            </label>
-                            <label name="exp">
-                                Expiration
-                                <div>
-                                    <input
-                                        type="number"
-                                        placeholder="month"
-                                        autocomplete="cc-exp-month"
-                                    />
-                                    <input
-                                        type="number"
-                                        placeholder="year"
-                                        autocomplete="cc-exp-year"
-                                    />
-                                </div>
-                            </label>
+                            <input
+                                id="ccv"
+                                placeholder="CCV"
+                                type="number"
+                                autocomplete="cc-csc"
+                            />
+                            <fieldset id="exp">
+                                <legend>Expiration</legend>
+                                <input
+                                    type="number"
+                                    placeholder="month"
+                                    autocomplete="cc-exp-month"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="year"
+                                    autocomplete="cc-exp-year"
+                                />
+                            </fieldset>
                             <input type="reset" />
                         </form>
                     </div>
